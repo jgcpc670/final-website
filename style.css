@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style for body */
+  body {
+    font-family: 'Comfortaa', sans-serif;
+    margin: 0;
+  }
+  
+  /* Header title */
+  .header {
+    padding: 70px;
+    text-align: center;
+    background: url(images/cocotree1.png) 95%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgba(123, 135, 87, 0.975);
+  }
+  
+  /* Font size of the heading */
+  .header h1 {
+    font-size: 70px;
+        /* Text shadow */  
+        text-shadow: 3px 3px 1px rgba(17, 15, 14, 0.972);
+        -webkit-text-stroke: 0px #0f0e0e;
+        /* Webkit (Safari/Chrome) */
+        text-shadow: 1px #825151;
+        /* Standard */
+        -webkit-text-fill-color: #f5d7b8;
+  }
+
+
+  /* Style top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #702d13c9;
+  }
+  
+  /* Style the navigation bar links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  /* Right-aligned link */
+  .topnav a.right {
+    float: right;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #fff9f9;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+  }
+  
+  /* Column container */
+  .row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that are next to each other */
+  /* Sidebar/left column */
+  .side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  /* Main column */
+  .main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  /* Fake image, just for this example */
+  .fakeimg {
+    background-color: #abaca5;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 20px;
+    background-color: #9b8e83ca;
+   }
+   
+ .input__container {
+    display: flex;
+    flex-direction: column;
+    align-self: first baseline;
+    row-gap: 0.8rem;
+    width: 75%;
+   }
+   
+ .input__container label { 
+    font-size: 1.5rem; 
+   }
+   
+ .input__container input,
+   textarea {
+    font-family: 'Comfortaa', sans-serif;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: 1px solid #555;
+    resize: none;
+   }
+   
+ button {
+    font-family:'Comfortaa', sans-serif;
+    align-self: flex-start;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    background: #1a1513c9;
+    color: #f9f5f5;
+    cursor: pointer;
+   }
+
+   button:hover {
+    background-color: #000000;
+   }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+  }
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+}
