@@ -156,4 +156,9 @@
       float: none;
       width: 100%;
     }
+    
+    .header > h1 {
+      display: flex;
+      font-size: 2.5rem;
+    }
 }
