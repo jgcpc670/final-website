@@ -1,0 +1,21 @@
+table { 
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid rgb(220, 168, 72);
+    border-collapse: collapse;
+}
+
+caption {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 10px 20px 10px;
+}
+
+th, td {
+    border: 2px solid rgb(220, 168, 72);
+    width: 150px;
+    padding: 10px;
+    align-content: center;
+}
