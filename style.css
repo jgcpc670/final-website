@@ -193,7 +193,6 @@
     float: left;
     flex: 30%;
     -ms-flex: 30%; /* IE10 */
-
   }
 
   /* Table Styles */
@@ -204,17 +203,42 @@
   
   /* Main column */
   .main {   
-    flex: 70%;
-    -ms-flex: 70%; /* IE10 */
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
+    max-width: 89%;
+    margin: 50px auto 16px;
+    background: rgba(237, 225, 199, 0.882);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: rgba(15, 41, 77, 0.12) 0px 4px 10px;
+  }
+
+  .sightmain {
+    max-width: 89%;
+    margin: 0px auto 16px;
+    background: rgba(237, 225, 199, 0.882);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: rgba(15, 41, 77, 0.12) 0px 4px 10px;
+  }
+
+  .cafemain {
+    max-width: 89%;
+    margin: 50px auto 16px;
+    background: rgba(237, 225, 199, 0.882);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: rgba(15, 41, 77, 0.12) 0px 4px 10px;
   }
 
   .mainfaq {
-    padding: 20px;
     text-align: center;
-     background-color: rgba(65, 45, 19, 0.867);
-     color: white;
+    color: white;
+    max-width: 89%;
+    margin: 50px auto 16px;
+    background: rgba(19, 25, 3, 0.882);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: rgba(15, 41, 77, 0.12) 0px 4px 10px;
+
   }
 
   .mainfaq h1 {
@@ -238,8 +262,13 @@
     padding: 20px;
   }
   .ohas-container {
-    padding: 20px;
     text-align: center;
+    max-width: 89%;
+    margin: 50px auto 16px;
+    background: rgba(237, 225, 199, 0.882);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: rgba(15, 41, 77, 0.12) 0px 4px 10px;
   }
 
   .cafemain {
