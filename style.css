@@ -14,18 +14,16 @@
     background: url(images/cocotree1.png) 95%;
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: rgba(123, 135, 87, 0.975);
+    background-color: rgb(115, 127, 65);
   }
-  
-
 
   /* Slideshow container */
   .slideshow-container {
     width: 100%;
-    height: 400px;
+    height: 600px;
     position: relative;
     margin: auto;
-    background-color: #717171;
+    background-color: #bfb9b9;
   }
   
   /* Next & previous buttons */
@@ -56,7 +54,7 @@
   }
 
   img {
-    max-height: 400px;
+    max-height: 600px;
   }
   
   /* Caption text */
@@ -136,7 +134,7 @@
   /* Style top navigation bar */
   .topnav {
     overflow: hidden;
-    background-color: #702d13c9;
+    background-color: #7e4f1dd0;
     font-size: 1.2em;
   }
   
@@ -148,6 +146,22 @@
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
+  }
+
+  .topnav span {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+
+  .topnav span:hover {
+    background-color: #fff9f9;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    cursor: pointer;
   }
   
   /* Right link */
@@ -192,8 +206,25 @@
   .main {   
     flex: 70%;
     -ms-flex: 70%; /* IE10 */
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 20px;
+  }
+
+  .mainfaq {
+    padding: 20px;
+    text-align: center;
+     background-color: rgba(65, 45, 19, 0.867);
+     color: white;
+  }
+
+  .mainfaq h1 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+
+  .mainfaq h5 {
+    font-size: 30px;
   }
   
   .main h3 {
@@ -203,13 +234,59 @@
     font-size: 1.0em;
   }
 
+  .cafemain-container {
+    padding: 20px;
+  }
+  .ohas-container {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .cafemain {
+    text-align: center;
+  }
+
+  .cafe670 > img { 
+    width: 70%;
+  }
+
+  .ohas1 > img {
+    width: 70%;
+  }
+
+  .ohascake > img {
+    width: 70%;
+  }
+
+  .ohas1 p {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
   .fakeimg {
     background-color: #abaca5;
     width: 100%;
     padding: 20px;
   }
 
+  .maps {
+    padding: 20px;
+  }
+  
+  .transportation a {
+    color: white;
+    text-align: center;
+  }
+
+  .citizen p {
+    line-height: 2.0;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  /* Form Styles */
    form {
+    align-items: center;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -221,7 +298,7 @@
  .input__container {
     display: flex;
     flex-direction: column;
-    align-self: first baseline;
+    align-self: center;
     row-gap: 0.8rem;
     width: 75%;
    }
@@ -241,7 +318,7 @@
    
  button {
     font-family:'Comfortaa', sans-serif;
-    align-self: flex-start;
+    align-self: center;
     padding: 1rem 2rem;
     border-radius: 5px;
     border: none;
@@ -254,22 +331,147 @@
     background-color: #000000;
    }
   
-  /* Footer */
+  /* Footer Styles */
   .footer {
-    padding: 20px;
     text-align: center;
-    background: #ddd;
+    background: rgb(77, 51, 34);
+    padding: 50px 70px 210px 50px;
   }
+
+  .quick {
+    color: #f2f2f2;
+    float: left;
+  }
+
+  .quick a {
+    color: #f2f2f2;
+    text-decoration: none;
+  }
+
+  .quick a:hover {
+    text-decoration: underline;
+  }
+
+  .contact {
+    text-align: right;
+    margin-right: 30px;
+    color: #f2f2f2;
+  }
+
+  .contact a {
+    color: #f2f2f2;
+    text-decoration: none;
+  }
+
+  .contact a:hover {
+    text-decoration: underline;
+  }
+
+  .disclaimer {
+    float: right;
+    width: 300px;
+    color: #f2f2f2;
+    line-height: 1.5;
+  }
+
+    /* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
   
-  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+ 
+  @media screen and (max-width: 1600px) {
+    .smallmap {
+      display: none;
+    }
+  }
+
+ /* When the screen is less than 700px wide, apply these styles */
   @media screen and (max-width: 700px) {
+
+    body {
+      max-width: 700px;
+    }
     .row {   
       flex-direction: column;
     }
+
+    .table {
+      display: none;
+    }
+    .maps {
+      display: none;
+    }
+    .smallmap {
+      display: contents;
+    }
+
+    .footer {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      text-align: right;
+    }
+
+    .disclaimer {
+      margin-left: auto;
+    }
+    .contact {
+      margin-right: auto;
+    }
+
+    .slideshow-container {
+      width: 100%;
+      height: auto;
+      background-color: white;
+    }
   }
   
-  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-  @media screen and (max-width: 400px) {
+  /* When the screen is less than 400px wide, apply these styles */
+  @media screen and (max-width: 390px) {
     .topnav a {
       float: none;
       width: 100%;
@@ -279,4 +481,47 @@
       display: flex;
       font-size: 2.5rem;
     }
-}
+
+    .slideshow-container {
+      width: 100%;
+      height: auto;
+      background-color: white;
+    }
+
+    img {
+      width: 390px;
+    }
+    .row {
+      width: 390px;
+    }
+
+    .row1 {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
+    .table {
+      display: none;
+    }
+
+    .footer {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      text-align: right;
+    }
+
+    .disclaimer {
+      margin-left: auto;
+    }
+    .contact {
+      margin-right: auto;
+    }
+
+    .maps {
+      display: none;
+    }
+    .smallmap {
+      display: contents;
+    }
+  }

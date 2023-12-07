@@ -23,31 +23,49 @@
   <a href="sights.html">Sights</a>
   <a href="faq.html">FAQ</a>
   <a href="contact.html" class="right">Contact</a>
+  <span onclick="openNav()">Menu</span>
  </div>
+
+ <!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="#">Home</a>
+    <a href="#">Cafés</a>
+    <a href="#">Restaurants</a>
+    <a href="#">Sights</a>
+    <a href="#">FAQ</a>
+    <a href="#">Contact</a>
+  </div>
+
+</div>
+
 <!-- Slideshow container -->
 <div class="slideshow-container">
+  <div class="fade">
 
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="imgtext">Description of Image</div>
-    <img src="images/angry3.jpg">
-    <div class="text">Caption Text</div>
+    <img src="images/managaha2.jpg" style="width:100%;">
   </div>
 
   <div class="mySlides fade">
-    <img src="images/angry5.jpg">
-    <div class="text">Caption Two</div>
+    <img src="images/birdisland.jpeg" style="width: 100%;">
   </div>
 
   <div class="mySlides fade">
-    <img src="images/ohas6.jpeg">
-    <div class="text">Caption Three</div>
+    <img src="images/grotto.jpeg" style="width: 100%;">
   </div>
 
   <!-- Next and previous buttons -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
+  </div>
 <br>
 
 <!-- The dots/circles -->
@@ -55,20 +73,11 @@
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
-</div>
+  </div>
+ </div>
+
 
  <div class="row">
-  <div class="side">
-    <h2>About Me</h2>
-    <h5>Photo of me:</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    <h3>More Text</h3>
-    <p>Lorem ipsum dolor sit ame.</p>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div>
-  </div>
   <div class="main">
     <h2>TITLE HEADING</h2>
     <h5>Title description, Dec 7, 2017</h5>
@@ -84,9 +93,26 @@
   </div>
  </div>
 
+ <!-- Footer -->
  <div class="footer">
-  <h2>Footer</h2>
-  <a href="mailto:bestofsaipan@yopmail.com">bestofsaipan@yopmail.com</a>
+  <div class="quick">
+    <h2>Quick Links</h2>
+    <ul><a href="index.html">Home</a></ul>
+    <ul><a href="cafes.html">Cafés</a></ul>
+    <ul><a href="restaurants.html">Restaurants</a></ul>
+    <ul><a href="sights.html">Sights</a></ul>
+    <ul><a href="faq.html">FAQ</a></ul>
+    <ul><a href="contact.html">Contact Us</a></ul>
+  </div>
+  <div class="contact">
+  <h2>Contact Information</h2>
+  <p>P.O. Box 1234670 CK Saipan, MP 96950</p>
+  <ul><a href="tel:16702345670">+ 1 (670) 234-5670</a></ul>
+  <a href="mailto:bestofsaipan@yopmail.com">bestofsaipan@yopmail.com</a></div>
+  <div class="disclaimer">
+    <br>
+   <p>*Disclaimer: We do not own <em>all</em> of the photos used on this website, 
+    and this website is solely for educational purposes and does not generate any revenue.</p></div>
  </div>
 
 </body>

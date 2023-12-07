@@ -5,19 +5,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
  <link href="style.css" rel="stylesheet">
+ <link href="slideshows.css" rel="stylesheet">
  <!-- Web Font -->
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 <!-- Web Font -->
-<script src="final.js" defer></script>
+<script src="lightbox.js" defer></script>
 </head>
+
 <body>
  <div class="header">
   <h1>Sights</h1>
   </div>
  </div>
 
+ <!-- Top Navigation Bar -->
  <div class="topnav">
   <a href="index.html">Home</a>
   <a href="cafes.html">Cafés</a>
@@ -26,6 +29,75 @@
   <a href="faq.html">FAQ</a>
   <a href="contact.html" class="right">Contact</a>
  </div>
+
+ <!-- Lightbox Images on Main Page-->
+ <div class="row1">
+  <div class="rowmain">
+    <img src="images/managaha2.jpg" id="m" style="max-width: 100%;" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="rowmain">
+    <img src="images/grotto.jpeg" id="g" style="max-width: 84.5%" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="rowmain">
+    <img src="images/forbidd.jpeg" style="max-width: 100%" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="rowmain">
+    <img src="images/birdisland.jpeg" style="max-width: 84.5%" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/managaha2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/grotto.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/forbidd.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/birdisland.jpeg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="images/managaha2.jpg" onclick="currentSlide(1)" alt="Mañagaha">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images/grotto.jpeg" onclick="currentSlide(2)" alt="Grotto">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images/forbidd.jpeg" onclick="currentSlide(3)" alt="Forbidden Island">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images/birdisland.jpeg" onclick="currentSlide(4)" alt="Bird Island">
+    </div>
+  </div>
+</div>
 
  <div class="row">
   <div class="side">
@@ -39,18 +111,26 @@
     <div class="fakeimg" style="height:60px;">Image</div><br>
     <div class="fakeimg" style="height:60px;">Image</div>
   </div>
+
   <div class="main">
-    <h2>The Grotto</h2>
+    <h2>Mañagaha Island</h2>
     <h5>Title description, Dec 7, 2017</h5>
     <div class="fakeimg" style="height:200px;">Image</div>
     <p>Some text..</p>
     <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     <br>
-    <h2>Forbidden Island</h2>
+
+    <h2>The Grotto</h2>
     <h5>Title description, Sep 2, 2017</h5>
     <div class="fakeimg" style="height:200px;">Image</div>
     <p>Some text..</p>
     <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+    <h2>Forbidden Island</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Some text..</p>
+
     <h2>Bird Island</h2>
     <h5>Title description, Sep 2, 2017</h5>
     <div class="fakeimg" style="height:200px;">Image</div>
@@ -58,8 +138,26 @@
   </div>
  </div>
 
- <div class="footer">
-  <h2>Footer</h2>
+<!-- Footer -->
+<div class="footer">
+  <div class="quick">
+    <h2>Quick Links</h2>
+    <ul><a href="index.html">Home</a></ul>
+    <ul><a href="cafes.html">Cafés</a></ul>
+    <ul><a href="restaurants.html">Restaurants</a></ul>
+    <ul><a href="sights.html">Sights</a></ul>
+    <ul><a href="faq.html">FAQ</a></ul>
+    <ul><a href="contact.html">Contact Us</a></ul>
+  </div>
+  <div class="contact">
+  <h2>Contact Information</h2>
+  <p>P.O. Box 1234670 CK Saipan, MP 96950</p>
+  <ul><a href="tel:16702345670">+ 1 (670) 234-5670</a></ul>
+  <a href="mailto:bestofsaipan@yopmail.com">bestofsaipan@yopmail.com</a></div>
+  <div class="disclaimer">
+    <br>
+   <p>*Disclaimer: We do not own <em>all</em> of the photos used on this website, 
+    and this website is solely for educational purposes and does not generate any revenue.</p></div>
  </div>
 
 </body>
