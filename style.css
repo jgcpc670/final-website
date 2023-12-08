@@ -104,6 +104,27 @@
     background-color: #593d20;
     font-size: 1.2em;
   }
+
+  .topnavcontact {
+    overflow: hidden;
+    background-color: #593d20;
+    font-size: 1.2em;
+  }
+
+  .topnavcontact a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  .topnavcontact a:hover {
+      background-color: #030303;
+      color: rgb(255, 255, 255);
+      text-decoration: underline;
+      cursor: pointer;
+  }
   
   /* Audio Control Styles */
   audio {
@@ -557,6 +578,10 @@
       float: none;
       width: 100%;
     }
+
+    .sidenav {
+      display: none;
+    }
     
     .header > h1 {
       display: flex;
@@ -569,8 +594,16 @@
       background-color: white;
     }
 
+    .homemain img {
+      width: 100%;
+    }
+
     img {
       width: 390px;
+    }
+
+    iframe {
+      width: 100%;
     }
     .row {
       width: 390px;
