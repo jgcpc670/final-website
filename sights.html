@@ -11,6 +11,7 @@
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 <!-- Web Font -->
+<script src="final.js" defer></script>
 <script src="lightbox.js" defer></script>
 </head>
 
@@ -20,15 +21,35 @@
   </div>
  </div>
 
- <!-- Top Navigation Bar -->
- <div class="topnav">
-  <a href="index.html">Home</a>
-  <a href="cafes.html">Cafés</a>
-  <a href="restaurants.html">Restaurants</a>
-  <a href="sights.html">Sights</a>
-  <a href="faq.html">FAQ</a>
-  <a href="contact.html" class="right">Contact</a>
+ <div class="sidenav">
+  <a href="index.html" id="index">Home</a>
+  <a href="cafes.html" id="cafe">Cafés</a>
+  <a href="restaurants.html" id="resto">Restaurants</a>
+  <a href="sights.html" id="sight">Sights</a>
+  <a href="faq.html" id="faq">FAQ</a>
  </div>
+
+ <div class="topnav">
+  <a href="contact.html" class="right">Contact</a>
+  <span onclick="openNav()">Menu</span>
+ </div>
+
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="cafes.html">Cafés</a>
+    <a href="restaurants.html">Restaurants</a>
+    <a href="sights.html">Sights</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
 
  <!-- Lightbox Images on Main Page-->
  <div class="row1">
@@ -102,36 +123,44 @@
  <div class="row">
   <div class="sightmain">
     <h2>Mañagaha Island</h2>
-    <div class="fakeimg" style="height:200px;">Image</div>
+    <img src="images/managaha3.jpg" style="width: 100%;">
      <p>Managaha is about 1.6 miles off the west coast of Saipan in the lagoon. It is an uninhabited small island, also called an islet, that is 13.2 acres in size. 
       As a popular day-trip destination from Saipan, the island offers wide, sandy beaches, as well as snorkeling, parasailing, and jet skiing. 
-      Many locals find it an ideal place for a weekend camping trip.</p></div>
+      Many locals find it an ideal place for a weekend camping trip.</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/60j54ZWiS8o?si=HB4KT4v4zzZN-2I8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
     <br>
     <div class="sightmain">
     <h2>The Grotto</h2>
-    <div class="fakeimg" style="height:200px;">Image</div>
+    <img src="images/grotto3.jpeg" style="width: 100%;">
     <p>The Grotto is a famous and impressive underwater limestone cavern that reaches some 21 meters (70 feet) below the sea at its deepest point. 
       Considered one of the best cavern-dive spots in the world, its wealth of underwater life—including turtles, parrotfish, many hard and soft corals 
       and colorful nudibranchs—makes it hugely popular with snorkelers and swimmers, too. 
-      Note that navigating the steep 112 steps down to the cave requires a certain level of physical fitness.</p></div>
+      Note that navigating the steep 112 steps down to the cave requires a certain level of physical fitness.</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/BdAz9nKaUwk?si=FuufVD_M_M-cgghW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
 
     <div class="sightmain">
     <h2>Forbidden Island</h2>
-    <div class="fakeimg" style="height:200px;">Image</div>
+    <img src="images/forbidden2.jpg" style="width: 100%;">
     <p>Forbidden Island is located in the southeast of Saipan. It is a semi-outlying island. Whenever the tide is high, Forbidden Island and Saipan are separated. 
       After the tide is low, the two islands are partly connected. Due to the special geographical location of Forbidden Island, there are very few traces of humans on the island, 
       and the road to Forbidden Island is not easy to walk, so if you want to play Forbidden Island, you must reserve a day. After arriving at Forbidden Island, there is also a 
       small natural swimming pool by the sea, surrounded by coral reefs, the sea water can enter and exit freely, and swimming here is very safe. The water in the natural swimming 
       pool is crystal clear, and you can also snorkel here. There are colorful and colorful marine life and various beautiful coral fish, small groupers, shrimps, conch, sea shells,
-       live corals, etc. in the pool. . Put on your diving goggles, slowly stretch out your body, float on the water, and quietly immerse yourself in this charming sea.</p></div>
+       live corals, etc. in the pool. . Put on your diving goggles, slowly stretch out your body, float on the water, and quietly immerse yourself in this charming sea.</p>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/2flaEoQf9Kg?si=nHtw_bo_3bRcKL0b&amp;start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
 
     <div class="sightmain">
     <h2>Bird Island</h2>
-    <div class="fakeimg" style="height:200px;">Image</div>
+    <img src="images/birdisland4.jpeg" style="width: 100%;">
     <p>Situated in a picturesque bay in Saipan's rugged northeastern coast, the tiny, rugged island is separated from Saipan 
       by a fringing reef, a narrow stretch of shallow lagoon and a lovely white sand beach. During the Japanese administration, 
       the island was known as tsukimi or “moon viewing island.” So named for the hundreds of birds that nest there, Bird Island is a must-see attraction in Saipan.
-       One of the marine sanctuaries where fishing is strictly prohibited, it is also one of the three areas on Saipan with volcanic deposits</p></div>
+       One of the marine sanctuaries where fishing is strictly prohibited, it is also one of the three areas on Saipan with volcanic deposits</p>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/uRnQu9tAjak?si=rsqRqhLZO8CH9L26" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
   </div>
 
 <!-- Footer -->

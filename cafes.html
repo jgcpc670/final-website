@@ -19,15 +19,35 @@
   <h1>Cafés</h1>
   </div>
 
- <div class="topnav">
-  <a href="index.html">Home</a>
-  <a href="cafes.html">Cafés</a>
-  <a href="restaurants.html">Restaurants</a>
-  <a href="sights.html">Sights</a>
-  <a href="faq.html">FAQ</a>
-  <a href="contact.html" class="right">Contact</a>
+ <div class="sidenav">
+  <a href="index.html" id="index">Home</a>
+  <a href="cafes.html" id="cafe">Cafés</a>
+  <a href="restaurants.html" id="resto">Restaurants</a>
+  <a href="sights.html" id="sight">Sights</a>
+  <a href="faq.html" id="faq">FAQ</a>
  </div>
 
+ <div class="topnav">
+  <a href="contact.html" class="right">Contact</a>
+  <span onclick="openNav()">Menu</span>
+ </div>
+
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="cafes.html">Cafés</a>
+    <a href="restaurants.html">Restaurants</a>
+    <a href="sights.html">Sights</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
  <!-- Slideshow container -->
 <div class="slideshow-container">
 
@@ -64,7 +84,7 @@
     <p>A modern-industrial style cafe located across fishing base in Garapan</p>
     <div class="ohas1"> 
       <div class="cafe670">
-      <img src="images/670b.jpeg" style="height:500px;" alt="display"></div>
+      <img src="images/670b.jpeg" style="height: auto;" alt="display"></div>
     <p><em>The interior</em></p>
     <p>The cafe has an open concept layout, but the decor and warm atmosphere makes the overall feel, cozy.</p>
     <p>My favorite beverage to get from here is the Green Tea Latte, or Matcha Latte.</p>
@@ -75,12 +95,11 @@
     <div class="ohas-container">
     <div class="ohas1">
       <h2>Ohas Boulangerie</h2>
-      <img src="images/ohas5.jpg" style="height:500px;" alt="inside">
+      <img src="images/ohas5.jpg" style="height:auto;" alt="inside">
       <p>A french-style bakery in the heart of Garapan, originally located in 
         Kensington Hotel, Ohas Boulangerie & Café in Garapan offers a wide array of freshly baked goods and 
         handcrafted desserts, made by professional patisserie chefs</p></div>
- 
-    <p>Some of my favorite pastries include:</p>
+      <p>Some of my favorite pastries include:</p>
       <ul>
        <ul>Blueberry Danish</ul><br>
        <ul>Chocolate Croissant</ul><br>
@@ -88,7 +107,7 @@
        <ul>Tiramisu Scoop Up Cake</ul>
       </ul>
       <div class="ohascake">
-    <img src="images/ohas3.jpg" style="height:500px;" alt="cakes"></div>
+    <img src="images/ohas3.jpg" style="height:auto;" alt="cakes"></div>
  </div>
 </div>
  <div class="table">
@@ -125,9 +144,9 @@
       </tr>
       <tr>
         <td rowspan="1">Rasberry Danish, Comb Danish, Sausage Danish</td>
-        <td rowspan="3">Chocolate Croissant</td>
+        <td rowspan="5">Chocolate Croissant</td>
         <td rowspan="2">Cream Bun, Biscuit Cream Bun</td>
-        <td rowspan="1">Cream Bun, Biscuit Cream Bun</td>
+        <td rowspan="6">Cream Bun, Biscuit Cream Bun</td>
       </tr>
       <tr>
         <td rowspan="1">Pain Au Chocolat, Pain Au Raisin, Passion Fruits Passion</td>

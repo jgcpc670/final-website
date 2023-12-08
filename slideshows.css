@@ -1,3 +1,6 @@
+/* Slideshow Styles */
+
+
 .row1 > .column {
     padding: 0 8px;
   }
@@ -8,7 +11,7 @@
     clear: both;
   }
   
-  /* Create four equal columns that floats next to eachother */
+  /* Four columns that float next to each other */
   .rowmain {
     float: left;
     width: 25%;
@@ -30,7 +33,7 @@
     width: 25%;
   }
   
-  /* The Modal (background) */
+  /* Background */
   .modal {
     display: none;
     position: fixed;
@@ -44,7 +47,7 @@
     background-color: black;
   }
   
-  /* Modal Content */
+  /* Content */
   .modal-content {
     position: relative;
     background-color: #000000;
@@ -55,7 +58,7 @@
     overflow: auto;
   }
   
-  /* The Close Button */
+  /* Close Button */
   .close {
     color: white;
     position: absolute;
@@ -72,7 +75,7 @@
     cursor: pointer;
   }
   
-  /* Hide the slides by default */
+  /* Hide slides */
   .mySlides {
     display: none;
   }

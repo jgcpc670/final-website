@@ -18,21 +18,41 @@
   </div>
  </div>
 
- <div class="topnav">
-  <a href="index.html">Home</a>
-  <a href="cafes.html">Cafés</a>
-  <a href="restaurants.html">Restaurants</a>
-  <a href="sights.html">Sights</a>
-  <a href="faq.html">FAQ</a>
-  <a href="contact.html" class="right">Contact</a>
+ <div class="sidenav">
+  <a href="index.html" id="index">Home</a>
+  <a href="cafes.html" id="cafe">Cafés</a>
+  <a href="restaurants.html" id="resto">Restaurants</a>
+  <a href="sights.html" id="sight">Sights</a>
+  <a href="faq.html" id="faq">FAQ</a>
  </div>
+
+ <div class="topnav">
+  <a href="contact.html" class="right">Contact</a>
+  <span onclick="openNav()">Menu</span>
+ </div>
+
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="cafes.html">Cafés</a>
+    <a href="restaurants.html">Restaurants</a>
+    <a href="sights.html">Sights</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
 
  <!-- Slideshow container -->
 <div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
-    <div class="imgtext">Description of Image</div>
     <img src="images/loria2.jpg" style="width: 100%;">
   </div>
 
@@ -58,28 +78,27 @@
 </div>
 
  <div class="row">
-  <div class="side">
-    <h2>About Me</h2>
-    <h5>Photo of me:</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    <h3>More Text</h3>
-    <p>Lorem ipsum dolor sit ame.</p>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div>
-  </div>
-  <div class="main">
+  <div class="restmain">
     <h2>The Angry Penne</h2>
-    <h5>A small italian-inspired restaurant located right across Memorial Park in Garapan that serves fresh pasta, and thin crust pizza baked in an in-house brick oven</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some of their most famous dishes include:</p>
+    <p>A small italian-inspired restaurant located right across Memorial Park in Garapan that serves fresh pasta, 
+      and thin crust pizza baked in an in-house brick oven</p>
+    <img src="images/angrypenne.jpg" style="width: 100%;">
+    <p>See their menu below:</p>
+    <img src="images/menu1.jpg" style="width: 25%; height: 370px;">
+    <img src="images/menu2.jpg" style="width: 25%;">
+    <img src="images/menu3.jpg" style="width: 25%;">
+    </div>
     <br>
-    <h2>Everest Kitchen</h2>
-    <h5>Homemade nepalese cuisine owned and operated by husband and wife, Lakshmi Shretha</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <div class="restmain">
+    <h2>Loria at the Kensington Hotel</h2>
+    <img src="images/loria1.jpg" style="width: 80%;">
+    <img src="images/loria2.jpeg" style="width: 80%;">
+    <img src="images/loria3.jpeg" style="width: 80%;">
+    <img src="images/loria4.jpeg" style="width: 80%;">
+    <p>Experience international gourmet revelations with a buffet selection ranging from Korean, 
+      Japanese and Chinese-inspired Asian cuisine to authentic Italian dining and desserts crafted 
+      by master pâtissiers, in a chic black and white interior evoking the ambience of a luxury cruise liner.</p>
+    </div>
   </div>
  </div>
 

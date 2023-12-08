@@ -14,16 +14,23 @@
 </head>
 <body>
   <div class="header">
+    <audio controls autoplay muted>
+      <source src="background.ogg" type="audio/ogg">
+      <source src="background.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
     <h1>The Best of Saipan</h1>
     </div>
  <div class="topnav">
-  <a href="index.html">Home</a>
-  <a href="cafes.html">Cafés</a>
-  <a href="restaurants.html">Restaurants</a>
-  <a href="sights.html">Sights</a>
-  <a href="faq.html">FAQ</a>
   <a href="contact.html" class="right">Contact</a>
   <span onclick="openNav()">Menu</span>
+ </div>
+ <div class="sidenav">
+  <a href="index.html" id="index">Home</a>
+  <a href="cafes.html" id="cafe">Cafés</a>
+  <a href="restaurants.html" id="resto">Restaurants</a>
+  <a href="sights.html" id="sight">Sights</a>
+  <a href="faq.html" id="faq">FAQ</a>
  </div>
 
  <!-- The overlay -->
@@ -34,12 +41,12 @@
 
   <!-- Overlay content -->
   <div class="overlay-content">
-    <a href="#">Home</a>
-    <a href="#">Cafés</a>
-    <a href="#">Restaurants</a>
-    <a href="#">Sights</a>
-    <a href="#">FAQ</a>
-    <a href="#">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="cafes.html">Cafés</a>
+    <a href="restaurants.html">Restaurants</a>
+    <a href="sights.html">Sights</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
   </div>
 
 </div>
@@ -50,8 +57,7 @@
 
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
-    <div class="imgtext">Description of Image</div>
-    <img src="images/managaha2.jpg" style="width:100%;">
+    <img src="images/best.jpg" style="width:100%;">
   </div>
 
   <div class="mySlides fade">
@@ -78,19 +84,14 @@
 
 
  <div class="row">
-  <div class="main">
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Dec 7, 2017</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    <br>
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Sep 2, 2017</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  <div class="homemain">
+    <h2>Håfa Adai, Tirow, and Welcome!</h2>
+    <p>We warmly welcome you to our beautiful island of Saipan, we hope you love it as much as we do.</p>
+    <img src="images/windsurf.jpeg" style="height:auto;">
+    <p>During your stay here, we hope you enjoy the many things our piece of paradise has to offer, 
+      please feel free <br> to explore this site to see "The Best of Saipan."</p>
   </div>
+    <br>
  </div>
 
  <!-- Footer -->

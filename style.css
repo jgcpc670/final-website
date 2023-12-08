@@ -7,7 +7,7 @@
     font-family: 'Comfortaa', sans-serif;
     margin: 0;
   }
-
+/* Header Style */
   .header {
     padding: 70px;
     text-align: center;
@@ -52,42 +52,9 @@
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
   }
-
+/* Set image height */
   img {
     max-height: 600px;
-  }
-  
-  /* Caption text */
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  /* Number text (1/3 etc) */
-  .imgtext {
-    display: none;
-    color: #f2f2f2;
-    font-size: 50px;
-    padding: 20px 30px;
-    position: absolute;
-    color: #f2f2f2;
-    position: absolute;
-    text-align: center;
-    margin-left: 12%;
-    margin-right: 10%;
-    margin-bottom: 20%;
-    margin-top: 0%;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    font-size: 40px;
-    color: white;
   }
   
   /* The dots/bullets/indicators */
@@ -101,7 +68,7 @@
     display: inline-block;
     transition: background-color 0.6s ease;
   }
-  
+  /* Color of dots when hovered over */
   .active, .dot:hover {
     background-color: #717171;
   }
@@ -134,47 +101,104 @@
   /* Style top navigation bar */
   .topnav {
     overflow: hidden;
-    background-color: #7e4f1dd0;
+    background-color: #593d20;
     font-size: 1.2em;
   }
   
-  /* Style navigation bar links */
-  .topnav a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
+  /* Audio Control Styles */
+  audio {
+    opacity: 0.2;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 
-  .topnav span {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
+  /* Side Navigation Menu Styles */
+  .sidenav a {
+    position: fixed;
+    left: -80px;
+    transition: 0.3s; 
+    padding: 15px; 
+    width: 100px; 
     text-decoration: none;
+    font-size: 20px; 
+    color: white; 
+    border-radius: 0 5px 5px 0;
+  }
+  
+  .sidenav a:hover {
+    left: 0; 
+  }
+  
+  
+  #index {
+    top: 20px;
+    background-color: #291a0ad0; /* Home Button Color */
+  }
+  
+  #cafe {
+    top: 80px;
+    background-color: #291a0ad0;  /* Cafe Button Color */
+  }
+  
+  #resto {
+    top: 140px;
+    background-color: #291a0ad0;  /* Restaurant Button Color */
+    width: auto;
+    left: -133px;
   }
 
-  .topnav span:hover {
-    background-color: #fff9f9;
-    color: rgb(0, 0, 0);
-    text-decoration: underline;
-    cursor: pointer;
+  #resto:hover {  
+    left: 0;
   }
   
-  /* Right link */
-  .topnav a.right {
-    float: right;
+  #sight {
+    top: 200px;
+    background-color: #291a0ad0;  /* Sights Button Color */
   }
+  #faq {
+    top: 260px;
+    background-color: #291a0ad0;  /* FAQ Button Color */
+  }
+
+
+    /* Top Navigation Bar Styles */
+    .topnav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+  /* Menu Button on Topnav Bar Style */
+    .topnav span {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
   
-  /* Change color on hover */
-  .topnav a:hover {
-    background-color: #fff9f9;
-    color: rgb(0, 0, 0);
-    text-decoration: underline;
-  }
+    .topnav span:hover {
+      background-color: #fff9f9;
+      color: rgb(0, 0, 0);
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    
+    /* Right link */
+    .topnav a.right {
+      float: right;
+    }
+    
+    /* Change color on hover */
+    .topnav a:hover {
+      background-color: #fff9f9;
+      color: rgb(0, 0, 0);
+      text-decoration: underline;
+    }
 
   /* Column container */
   .row {  
@@ -201,34 +225,61 @@
     margin: auto;
   }
   
-  /* Main column */
+  /* Main Column Styles */
   .main {   
     max-width: 89%;
     margin: 50px auto 16px;
-    background: rgba(237, 225, 199, 0.882);
+    background: rgba(253, 238, 208, 0.949);
     border-radius: 8px;
     padding: 30px;
     box-shadow: rgba(15, 41, 77, 0.12) 0px 4px 10px;
   }
-
+ /* Sights Page Main Column Styles */
   .sightmain {
     max-width: 89%;
     margin: 0px auto 16px;
-    background: rgba(237, 225, 199, 0.882);
+    background: rgba(253, 238, 208, 0.949);
     border-radius: 8px;
     padding: 30px;
     box-shadow: rgba(15, 41, 77, 0.12) 0px 4px 10px;
+    line-height: 1.7;
+    text-align: center;
   }
-
+ /* Cafe Page Main Column Styles */
   .cafemain {
     max-width: 89%;
     margin: 50px auto 16px;
-    background: rgba(237, 225, 199, 0.882);
+    background: rgba(253, 238, 208, 0.949);
     border-radius: 8px;
     padding: 30px;
     box-shadow: rgba(15, 41, 77, 0.12) 0px 4px 10px;
   }
+  /* Home Page Main Column Styles */
+  .homemain {
+    max-width: 89%;
+    margin: 50px auto 16px;
+    background: rgba(253, 238, 208, 0.949);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: rgba(15, 41, 77, 0.12) 0px 4px 10px;
+    text-align: center;
+    line-height: 1.8;
+  }
+  /* Restaurants Page Main Column Styles */
+  .restmain {
+    max-width: 89%;
+    margin: 50px auto 16px;
+    background: rgba(253, 238, 208, 0.949);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: rgba(15, 41, 77, 0.12) 0px 4px 10px;
+    text-align: center;
+  }
 
+  .homemain h2 {
+    font-size: 35px;
+  }
+ /* FAQ Page Main Column Styles */
   .mainfaq {
     text-align: center;
     color: white;
@@ -258,6 +309,7 @@
     font-size: 1.0em;
   }
 
+  /* Container on Cafe Page Styles */
   .cafemain-container {
     padding: 20px;
   }
@@ -269,6 +321,10 @@
     border-radius: 8px;
     padding: 30px;
     box-shadow: rgba(15, 41, 77, 0.12) 0px 4px 10px;
+  }
+
+  .ohas-container ul {
+    text-align: center;
   }
 
   .cafemain {
@@ -290,12 +346,6 @@
   .ohas1 p {
     margin-left: 10%;
     margin-right: 10%;
-  }
-
-  .fakeimg {
-    background-color: #abaca5;
-    width: 100%;
-    padding: 20px;
   }
 
   .maps {
@@ -344,7 +394,7 @@
     border: 1px solid #555;
     resize: none;
    }
-   
+   /* Submit Button Style */
  button {
     font-family:'Comfortaa', sans-serif;
     align-self: center;
@@ -367,6 +417,7 @@
     padding: 50px 70px 210px 50px;
   }
 
+  /* Quick Links, Bottom Left Footer Styles */
   .quick {
     color: #f2f2f2;
     float: left;
@@ -381,6 +432,7 @@
     text-decoration: underline;
   }
 
+  /* Contact Info, Bottom Right Footer Styles */
   .contact {
     text-align: right;
     margin-right: 30px;
@@ -395,7 +447,7 @@
   .contact a:hover {
     text-decoration: underline;
   }
-
+ /* Disclaimer, Footer Style */
   .disclaimer {
     float: right;
     width: 300px;
@@ -404,51 +456,51 @@
   }
 
     /* The Overlay (background) */
-.overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+ .overlay {  
   height: 100%;
   width: 0;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  position: fixed; 
+  z-index: 1; 
   left: 0;
   top: 0;
-  background-color: rgb(0,0,0); /* Black fallback color */
-  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-}
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.9); 
+  overflow-x: hidden; 
+  transition: 0.5s; 
+ }
 
-/* Position the content inside the overlay */
-.overlay-content {
+ /* Position the content inside the overlay */
+ .overlay-content {
   position: relative;
-  top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-}
+  top: 25%; 
+  width: 100%; 
+  text-align: center; 
+  margin-top: 30px; 
+ }
 
 /* The navigation links inside the overlay */
-.overlay a {
+  .overlay a {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
   color: #818181;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
+  display: block; 
+  transition: 0.3s;   
 }
 
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
+ /* When you mouse over the navigation links, change their color */
+ .overlay a:hover, .overlay a:focus {
   color: #f1f1f1;
-}
+  cursor: pointer;
+ }
 
-/* Position the close button (top right corner) */
-.overlay .closebtn {
+ /* Position the close button (top right corner) */
+ .overlay .closebtn {
   position: absolute;
   top: 20px;
   right: 45px;
   font-size: 60px;
-}
+ }
 
   
  
@@ -501,7 +553,7 @@
   
   /* When the screen is less than 400px wide, apply these styles */
   @media screen and (max-width: 390px) {
-    .topnav a {
+    .topnav a, span {
       float: none;
       width: 100%;
     }

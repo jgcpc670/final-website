@@ -10,21 +10,43 @@
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 <!-- Web Font -->
+<script src="final.js" defer></script>
 </head>
 <body>
  <div class="header">
   <h1>FAQ</h1>
   </div>
  </div>
-<!-- Top Navigation Bar -->
- <div class="topnav">
-  <a href="index.html">Home</a>
-  <a href="cafes.html">Cafés</a>
-  <a href="restaurants.html">Restaurants</a>
-  <a href="sights.html">Sights</a>
-  <a href="faq.html">FAQ</a>
-  <a href="contact.html" class="right">Contact</a>
+
+ <div class="sidenav">
+  <a href="index.html" id="index">Home</a>
+  <a href="cafes.html" id="cafe">Cafés</a>
+  <a href="restaurants.html" id="resto">Restaurants</a>
+  <a href="sights.html" id="sight">Sights</a>
+  <a href="faq.html" id="faq">FAQ</a>
  </div>
+
+ <div class="topnav">
+  <a href="contact.html" class="right">Contact</a>
+  <span onclick="openNav()">Menu</span>
+ </div>
+
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="index.html">Home</a>
+    <a href="cafes.html">Cafés</a>
+    <a href="restaurants.html">Restaurants</a>
+    <a href="sights.html">Sights</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
 
  <!-- Main Content-->
   <div class="mainfaq">
